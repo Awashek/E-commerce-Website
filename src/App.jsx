@@ -4,8 +4,8 @@ function App() {
   
 
   return (
-    <div className="font-poppins bg-red-700">
-      <Header />
+    <div className="font-poppins">
+      <Header /> 
     </div>
   )
 }
