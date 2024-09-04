@@ -38,7 +38,7 @@ export default function Hero(props) {
                             Add to Cart
                         </button>
                         <button 
-                            onClick={() => handleShopNow(product)}
+                            onClick={() => handelShopNow(product)}
                             className="bg-green-500 text-white py-1 px-3 rounded hover:bg-green-600 transition">
                             Shop Now
                         </button>
