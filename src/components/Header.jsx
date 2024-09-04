@@ -12,26 +12,45 @@ export default function Header() {
         <div className=''>
             <ul className='flex items-center gap-16'>
                 <li>
-                    <Link className='hover:text-gray-500' to="/">Home</Link>
+                    <NavLink to="/"
+                        className={({isActive}) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700 underline underline-offset-4" : "text-gray-700"} 
+                            border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`}
+                            >Home
+                    </NavLink>
                 </li>
                 <li>
-                    <Link className='hover:text-gray-500' to="/Login">Login</Link>
+                <NavLink to="/Shop"
+                        className={({isActive}) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700 underline underline-offset-4" : "text-gray-700"} 
+                            border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`}
+                            >Shop
+                    </NavLink>
                 </li>
                 <li>
-                    <Link className='hover:text-gray-500' to="/About">About</Link>
+                <NavLink to="/About"
+                        className={({isActive}) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700 underline underline-offset-4" : "text-gray-700"} 
+                            border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`}
+                            >About
+                    </NavLink>
                 </li>
                 <li>
-                    <Link className='hover:text-gray-500' to="#">Contact</Link>
+                <NavLink to="/Login"
+                        className={({isActive}) =>
+                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700 underline underline-offset-4" : "text-gray-700"} 
+                            border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`}
+                            >Login
+                    </NavLink>
                 </li>
                 
             </ul>
         
         </div>              
         <div className='flex items-center'>
-            <i className="fa-solid fa-cart-shopping text-2xl items-center mx-6 "></i>
-
-            <button className='bg-slate-800 text-white 
-                px-5 py-2 rounded-full hover:bg-slate-600'>
+        <i className="fa-solid fa-cart-shopping text-2xl items-center mx-6"></i>
+            <button className='bg-slate-950 text-white 
+                px-5 py-2 rounded-full hover:bg-slate-700'>
                 Sign in
             </button>
         </div>
