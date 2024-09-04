@@ -1,14 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { products } from '../Products'
-export default function Hero(props) {
-  const {id, name, description, price, image} = props
+export default function Hero() {
 
-  const handleAddToCart = (products) => {
+  const handleAddToCart = ({product}) => {
     console.log("added")
   }
 
-  const handelShopNow = (products) => {
+  const handelShopNow = (product) => {
     console.log("added")
   }
   return (
@@ -34,12 +33,12 @@ export default function Hero(props) {
                     <div className="mt-4 flex justify-between">
                         <button 
                             onClick={() => handleAddToCart(product)}
-                            className="bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600 transition">
+                            className="bg-slate-800 text-white py-1 px-3  hover:bg-slate-600 transition rounded-full">
                             Add to Cart
                         </button>
                         <button 
                             onClick={() => handelShopNow(product)}
-                            className="bg-green-500 text-white py-1 px-3 rounded hover:bg-green-600 transition">
+                            className="bg-orange-800 text-white py-1 px-3 rounded-full hover:bg-orange-600 transition">
                             Shop Now
                         </button>
                     </div>
