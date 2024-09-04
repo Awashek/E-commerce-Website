@@ -7,7 +7,7 @@ export default function Hero() {
     console.log("added")
   }
 
-  const handelShopNow = (product) => {
+  const handleShopNow = (product) => {
     console.log("added")
   }
   return (
@@ -25,26 +25,30 @@ export default function Hero() {
         </div> */}
         <h2 className='text-3xl text-center '>Products</h2>
         <div className="flex flex-wrap justify-center p-4 bg-gray-100">
-            {products.map(product => (
-                <div key={product.id} className="m-4 p-4 bg-white shadow-lg rounded-lg w-60">
-                    <img src={product.image} alt={product.description} className="w-full h-40 object-cover rounded-t-lg" />
-                    <h2 className="text-lg font-semibold mt-2">{product.description}</h2>
-                    <p className="text-gray-700 mt-1">{product.price}</p>
-                    <div className="mt-4 flex justify-between">
-                        <button 
-                            onClick={() => handleAddToCart(product)}
-                            className="bg-slate-800 text-white py-1 px-3  hover:bg-slate-600 transition rounded-full">
-                            Add to Cart
-                        </button>
-                        <button 
-                            onClick={() => handelShopNow(product)}
-                            className="bg-orange-800 text-white py-1 px-3 rounded-full hover:bg-orange-600 transition">
-                            Shop Now
-                        </button>
-                    </div>
+    {products.map(product => (
+        <div key={product.id} className="m-4 p-4 bg-white shadow-lg rounded-lg w-60 grid grid-rows-[auto_1fr_auto]">
+            <img src={product.image} alt={product.description} className="w-full h-40 object-cover rounded-t-lg" />
+            <div className="mt-2 flex-grow">
+                <h2 className="text-lg font-semibold">{product.description}</h2>
+                <p className="text-gray-700 mt-1">{product.price}</p>
+            </div>
+            <div className="mt-4">
+                <div className="flex justify-between items-center ">
+                    <button 
+                        onClick={() => handleAddToCart(product)}
+                        className="bg-slate-800 text-white py-2 px-3 hover:bg-slate-600 transition rounded-full">
+                        Add to Cart
+                    </button>
+                    <button 
+                        onClick={() => handleShopNow(product)}
+                        className="bg-orange-800 text-white py-2 px-3 rounded-full hover:bg-orange-600 transition">
+                        Shop Now
+                    </button>
                 </div>
-            ))}
+            </div>
         </div>
+    ))}
+</div>
         </Link>
     </div>
   )
