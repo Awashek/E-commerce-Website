@@ -9,7 +9,7 @@ export default function Footer() {
                   <div className="mb-6 md:mb-0">
                       <Link to="/" className="flex items-center">
                           <img
-                              src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+                              src="/public/images/logo.png"
                               className="mr-3 h-16"
                               alt="Logo"
                           />
@@ -72,8 +72,8 @@ export default function Footer() {
               <div className="sm:flex sm:items-center sm:justify-between">
                   <span className="text-sm text-gray-500 sm:text-center">
                       © 2023
-                      <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                          hiteshchoudhary
+                      <a className="hover:underline">
+                          Awashek
                       </a>
                       . All Rights Reserved.
                   </span>
