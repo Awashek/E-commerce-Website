@@ -10,15 +10,9 @@ export default function Products() {
 
   <>
     <div className='flex min-h-screen'>
-            <div className='w-[30%] min-h-screen border-r-2 border-solid 
-            border-[#e5e5e5]'> 
                 <Sidebar />
-            </div>
             <div className='flex flex-col w-full'>
-                <div className='flex-grow border-b-2 border-solid 
-            border-[#e5e5e5]'> 
                     <Recommended />
-                </div>
                 <div className='w-full flex-grow'> 
                     <div className="flex flex-wrap justify-center p-4">
                         {products.map(product => (
