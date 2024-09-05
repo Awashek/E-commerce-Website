@@ -10,7 +10,7 @@ export default function Products() {
 
   <>
     <div className='flex min-h-screen'>
-            <div className='w-[30%] min-h-screen bg-blue-100'> 
+            <div className='w-[22%] min-h-screen bg-blue-100'> 
                 <Sidebar />
             </div>
             <div className='flex flex-col w-full'>
@@ -29,7 +29,7 @@ export default function Products() {
                                         <span className="ml-2 text-sm text-gray-500">{product.reviews}</span>
                                     </div>
                                     <p className="text-gray-700 mt-1 line-through">{product.prevPrice}</p>
-                                    <p className="text-gray-900 font-bold">${product.newPrice}</p>
+                                    <p className="text-gray-900 font-bold">{product.newPrice}</p>
                                 </div>
                                 <div className="mt-4">
                                     <div className="flex justify-between items-center">

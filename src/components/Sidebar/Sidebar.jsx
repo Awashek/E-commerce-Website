@@ -5,9 +5,9 @@ import Colors from './Colors/Colors'
 export default function Sidebar() {
   return (
     <>
-      <section>
+      <section className='justify-center'>
         <div>
-            <h1>🛒</h1>
+            <h1 className='text-5xl text-center pt-3 pb-3'>🛒</h1>
         </div>
         <Category />
         <Colors />
