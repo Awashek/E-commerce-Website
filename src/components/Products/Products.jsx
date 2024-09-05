@@ -1,10 +1,11 @@
 import React from 'react'
 import { products } from '../../db/Products'
+import Recommended from '../Recommended/Recommended'
 export default function Shop() {
   return (
 
     <>
-    <h2 className='text-3xl text-slate-900 text-center p-4 py-4'>Products</h2>
+    <Recommended />
     <div className='flex'>
     <div className='w-[40%] bg-blue-100'>
    <h1>sidebar</h1>
