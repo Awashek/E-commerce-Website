@@ -1,32 +1,18 @@
-import React from 'react'
-import {  } from "../../components/Input";
+import React, { useState } from 'react'
+import Input from '../../../Input'
 export default function Category() {
-  return (
-    <div>
-      <h2 className='text-2xl mb-1'>Category</h2>
-      <div className='flex flex-col'>
-       <Input />
-
-        <label htmlFor="" className='label'>
-          <input type="radio" name="category"/>
-          <span>Sneaker</span>
-        </label>
-
-        <label htmlFor="" className='label'>
-          <input type="radio" name="category"/>
-          <span>Flats</span>
-        </label>
-
-        <label htmlFor="" className='label'>
-          <input type="radio" name="category"/>
-          <span>Sandals</span>
-        </label>
-
-        <label htmlFor="" className='label'>
-          <input type="radio" name="category"/>
-          <span>Heels</span>
-        </label>
+  const [selectedCategory, setselectedCategory] =useState(null)
+    return (
+      <div className='pl-1'>
+        <h2 className="text-2xl mb-1 mt-3">Category</h2>
+        <div className="flex flex-col">
+        <Input />
+        <Input />
+        <Input />
+        <Input />
+        <Input />
       </div>
     </div>
-  )
-}
+    )
+  }
+  
