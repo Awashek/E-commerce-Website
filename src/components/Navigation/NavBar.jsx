@@ -48,6 +48,11 @@ export default function Header() {
         
         </div>              
         <div className='flex items-center'>
+        <input 
+      type="text" 
+      placeholder="Search..." 
+      class="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
+    />
         <i className="fa-solid fa-cart-shopping text-2xl items-center mx-6"></i>
             <button className='bg-slate-950 text-white 
                 px-5 py-2 rounded-full hover:bg-slate-700'>

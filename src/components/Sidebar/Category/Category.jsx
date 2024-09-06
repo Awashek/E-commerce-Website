@@ -1,14 +1,11 @@
 import React from 'react'
-
+import {  } from "../../components/Input";
 export default function Category() {
   return (
     <div>
       <h2 className='text-2xl mb-1'>Category</h2>
       <div className='flex flex-col'>
-        <label htmlFor="" className='label'>
-          <input type="radio" name="category"/>
-          <span>All</span>
-        </label>
+       <Input />
 
         <label htmlFor="" className='label'>
           <input type="radio" name="category"/>

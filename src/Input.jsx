@@ -2,6 +2,9 @@ import React from 'react'
 
 export default function Input() {
   return (
-    <div>Input</div>
+      <label htmlFor="" className='label'>
+          <input type="radio" name="category"/>
+          <span>All</span>
+        </label>
   )
 }
