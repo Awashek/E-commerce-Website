@@ -26,7 +26,7 @@ export default function Category() {
         </label>
 
         <label htmlFor="" className='label'>
-          <input type="radio" name="test"/>
+          <input type="radio" className="bg-cyan-500" name="test"/>
           <span>Heels</span>
         </label>
       </div>
