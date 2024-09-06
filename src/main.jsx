@@ -32,7 +32,7 @@ import { products } from './db/Products.js'
   }
   const filteredData = (products,selected,query) => {
     let filteredProducts = products
-  }
+  
     //Filtering input
     if(query) {
       filteredProducts = filteredItems
@@ -45,9 +45,9 @@ import { products } from './db/Products.js'
           category === selected || color === selected ||
           company === selected || newPrice === selected||
           title === selected)
-
         }
-    
+        return filteredProducts.map(({img}))
+      }
   
 
 const router = createBrowserRouter(
