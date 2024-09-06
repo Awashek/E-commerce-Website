@@ -1,6 +1,6 @@
 import React, { createElement } from 'react'
 import {Link, NavLink} from 'react-router-dom'
-export default function Header() {
+export default function NavBar() {
   return (
     <header className='bg-slate-100 shadow sticky z-50 top-0'>
       <nav className='flex justify-between items-center w-[92%] mx-auto sticky z-50'>

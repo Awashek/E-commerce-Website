@@ -3,6 +3,8 @@ import Category from './Category/Category'
 import Price from './Price/Price'
 import Colors from './Colors/Colors'
 export default function Sidebar() {
+  
+
   return (
     <>
       <section className='flex flex-col p-4 w-[15%] min-h-screen border-r-2 border-solid 

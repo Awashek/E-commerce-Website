@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Sidebar from '../Sidebar/Sidebar'
 export default function Recommended() {
   return (
     <div className='mt-6 mb-6 flex-grow border-b-2 border-solid 
