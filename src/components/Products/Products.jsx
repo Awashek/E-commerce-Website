@@ -3,11 +3,7 @@ import { products } from '../../db/Products'
 import Recommended from '../Recommended/Recommended'
 import Sidebar from '../Sidebar/Sidebar'
 export default function Products() {
-  
-  console.log('Products: ', products || null);
-  
   return (
-
   <>
     <div className='flex min-h-screen'>
                 <Sidebar />

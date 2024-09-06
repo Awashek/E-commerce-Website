@@ -12,3 +12,10 @@
     color: #323232;
     cursor: pointer;
   }
+
+  .label {
+    display: flex;
+    flex-direction: row; 
+    margin-top: 1px;
+    gap: 7px;
+  } 
