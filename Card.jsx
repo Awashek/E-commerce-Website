@@ -1,8 +1,9 @@
 import React from 'react'
 import { products } from './src/db/Products'
-export default function Card(props) {
+export default function Card() {
   return (
       <div className="flex flex-wrap justify-center p-4">
+    {products.map(product => (
         <div key={product.id} className="m-4 p-4 bg-white shadow-lg rounded-lg w-60 grid grid-rows-[auto_1fr_auto]">
             <img src={product.img} alt={product.title} className="w-full h-40 object-contain rounded-t-lg" />
             <div className="mt-2 flex-grow">
@@ -29,7 +30,7 @@ export default function Card(props) {
                 </div>
             </div>
         </div>
-
+    ))}
 </div>
   )
 }
