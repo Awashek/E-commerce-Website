@@ -10,7 +10,7 @@ export default function Products() {
                 <Sidebar handleChange={handleChange}/>
             <div className='flex flex-col w-full'>
                     <Recommended />
-                <div className='w-full flex-grow'> 
+                <div className='w-full flex-grow min-h-screen'> 
                     {result}
                 </div>
             </div>

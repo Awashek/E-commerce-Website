@@ -3,15 +3,48 @@ import Input from '../../../Input'
 
 export default function Price({handleChange}) {
   return (
-    <div className="pr-8">
+    <div>
       <h2 className="text-2xl mb-1 mt-3">Price</h2>
       <div className="flex flex-col">
-      <Input />
-      <Input />
-      <Input />
-      <Input />
-      <Input />
+      <label>
+          <input 
+          onClick={handleChange}
+          type="radio" 
+          value=""
+          name='price'
+          />
+          <span> All</span>
+        </label>
+
+        <Input
+        handleChange={handleChange}
+        value={50}
+        title = "$0-$50"
+        name="price"
+        />
+
+        <Input
+        handleChange={handleChange}
+        value={100}
+        title = "$50-$100"
+        name="price"
+        />
+
+        <Input
+        handleChange={handleChange}
+        value={150}
+        title = "$100-$150"
+        name="price"
+        />
+
+        <Input
+        handleChange={handleChange}
+        value={200}
+        title = "Over $150"
+        name="price"
+        />
+      </div>
     </div>
-  </div>
+
   )
 }
