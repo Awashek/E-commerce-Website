@@ -70,7 +70,7 @@ export default function Layout() {
   return (
     <div>
       <NavBar query={query} handleInputChange={handleInputChange}/>
-      <Outlet context={{result}}/>
+      <Outlet context={{result, handleChange, handleClick}}/>
       <Footer />
     </div>
   )
