@@ -52,7 +52,7 @@ export default function Layout() {
         <div className="flex flex-wrap justify-center p-4 bg-gray-100">
           {filteredProducts.map((product) => (
             <Card
-              key={product.title}
+              key={product.id}
               img={product.img}
               title={product.title}
               star={product.star}
@@ -66,6 +66,15 @@ export default function Layout() {
   }
 
   const result = filteredData(products, selectedCategory, query);
+
+
+  const handleAddToCart = ({product}) => {
+    console.log("added")
+  }
+
+  const handleShopNow = (product) => {
+    console.log("added")
+  }
 
   return (
     <div>
