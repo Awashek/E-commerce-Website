@@ -13,8 +13,7 @@ export default function Price({ handleChange }) {
             value=""
             name='price'
           />
-          <span className='checkmark'></span>
-          All
+          <span>All</span>
         </label>
 
         <Input

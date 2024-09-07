@@ -16,7 +16,7 @@ export default function Card({ img, title, star, reviews, prevPrice, newPrice })
           <span className="ml-2 text-sm text-gray-500">{reviews}</span>
         </div>
         <p className="text-gray-700 mt-1 line-through">{prevPrice}</p>
-        <p className="text-gray-900 font-bold">{newPrice}</p>
+        <p className="text-gray-900 font-bold">${newPrice}</p>
       </div>
       <div className="mt-4">
         <div className="flex justify-between items-center ">

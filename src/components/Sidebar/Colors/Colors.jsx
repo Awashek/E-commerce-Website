@@ -8,7 +8,7 @@ export default function Colors({handleChange}) {
       <div className="flex flex-col">
       <label>
           <input 
-          onClick={handleChange}
+          onChange={handleChange}
           type="radio" 
           value=""
           name="color"
@@ -17,35 +17,35 @@ export default function Colors({handleChange}) {
         </label>
 
         <Input 
-        onClick={handleChange}
+        handleChange = {handleChange}
         value="blue"
         title="Blue"
         name="color"
         />
 
         <Input 
-        onClick={handleChange}
+        handleChange = {handleChange}
         value="red"
         title="Red"
         name="color"
         />
 
         <Input 
-        onClick={handleChange}
+        handleChange = {handleChange}
         value="green"
         title="Green"
         name="color"
         />
 
         <Input 
-        onClick={handleChange}
+        handleChange = {handleChange}
         value="white"
         title="White"
         name="color"
         />
 
         <Input 
-        onClick={handleChange}
+        handleChange = {handleChange}
         value="black"
         title="Black"
         name="color"
