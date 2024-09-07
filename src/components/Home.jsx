@@ -2,13 +2,6 @@ import React from 'react'
 import { products } from '../db/Products'
 export default function Home() {
 
-  const handleAddToCart = ({product}) => {
-    console.log("added")
-  }
-
-  const handleShopNow = (product) => {
-    console.log("added")
-  }
   return (
     <div>
       <div className='relative'>
@@ -22,7 +15,7 @@ export default function Home() {
           Shop Now
         </button>
         </div>
-                </div>
+            </div>
     </div>
   )
 }

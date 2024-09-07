@@ -1,9 +1,10 @@
 import React, { createElement } from 'react'
 import {Link, NavLink} from 'react-router-dom'
-export default function NavBar() {
-  return (
+export default function NavBar(props) {
+    const {query,handeleInputChange} = props
+    return (
     <header className='bg-slate-100 shadow sticky z-50 top-0'>
-      <nav className='flex justify-between items-center w-[92%] mx-auto sticky z-50'>
+    <nav className='flex justify-between items-center w-[92%] mx-auto sticky z-50'>
         <Link>
             <img className='w-16'
             src="/public/images/logo.png" alt="logo" 
@@ -49,10 +50,12 @@ export default function NavBar() {
         </div>              
         <div className='flex items-center'>
         <input 
-      type="text" 
-      placeholder="Search..." 
-      class="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
-    />
+            type="text" 
+            placeholder="Search..." 
+            onChange={handeleInputChange}
+            value={query}
+            className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
+            />
         <i className="fa-solid fa-cart-shopping text-2xl items-center mx-6 text-slate-800"></i>
             <button className='bg-slate-800 text-white 
                 px-5 py-2 rounded-full hover:bg-slate-900'>
@@ -60,7 +63,7 @@ export default function NavBar() {
             </button>
         </div>
         
-      </nav>
+    </nav>
     </header>
-  )
+)
 }
