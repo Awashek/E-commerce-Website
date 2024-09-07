@@ -1,6 +1,6 @@
 import {Link, NavLink} from 'react-router-dom'
 export default function NavBar(props) {
-    const {query, handleInputChange} = props
+    const {search, handleInputChange} = props
     return (
     <header className='bg-slate-100 shadow sticky z-50 top-0'>
     <nav className='flex justify-between items-center w-[92%] mx-auto sticky z-50'>
@@ -52,7 +52,7 @@ export default function NavBar(props) {
             type="text" 
             placeholder="Search..." 
             onChange={handleInputChange}
-            value={query}
+            value={search}
             className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
             />
         <i className="fa-solid fa-cart-shopping text-2xl items-center mx-6 text-slate-800"></i>

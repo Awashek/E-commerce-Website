@@ -10,14 +10,14 @@ export default function Layout() {
 
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  const [query, setQuery] = useState("");
+  const [search, setSearch] = useState("");
 
   const handleInputChange = (event) => {
-    setQuery(event.target.value);
+    setSearch(event.target.value);
   };
 
   const filteredItems = products.filter(
-    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
+    (product) => product.title.toLowerCase().indexOf(search.toLowerCase()) !== -1
   );
 
   const handleChange = (e) => {
@@ -29,10 +29,10 @@ export default function Layout() {
     setSelectedCategory(e.target.value);
   };
 
-  function filteredData(products, selected, query) {
+  function filteredData(products, selected, search) {
     let filteredProducts = products;
 
-    if (query) {
+    if (search) {
       filteredProducts = filteredItems;
     }
 
@@ -65,7 +65,7 @@ export default function Layout() {
       );
   }
 
-  const result = filteredData(products, selectedCategory, query);
+  const result = filteredData(products, selectedCategory, search);
 
 
   const handleAddToCart = ({product}) => {
@@ -78,7 +78,7 @@ export default function Layout() {
 
   return (
     <div>
-      <NavBar query={query} handleInputChange={handleInputChange}/>
+      <NavBar search={search} handleInputChange={handleInputChange}/>
       <Outlet context={{result, handleChange, handleClick}}/>
       <Footer />
     </div>
