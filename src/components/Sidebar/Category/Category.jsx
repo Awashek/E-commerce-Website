@@ -7,7 +7,7 @@ export default function Category({handleChange}) {
         <div className="flex flex-col">
         <label>
           <input 
-          onClick={handleChange}
+          onChange={handleChange}
           type="radio" 
           value=""
           name='cate'
