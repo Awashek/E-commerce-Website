@@ -8,7 +8,7 @@ export default function Input({handleChange,value,title,name}) {
           type="radio" 
           value={value}
           name={name} 
-          className='cursor-pointer'/>
+          className='cursor-pointer style={{backgroundcolor}}'/>
           <span>{title}</span>
         </label>
   )

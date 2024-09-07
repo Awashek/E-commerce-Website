@@ -4,7 +4,7 @@ import NavBar from './components/Navigation/NavBar'
 import Footer from './components/Footer'
 import { products } from './db/Products'
 import { useState } from 'react'
-import Card from './Card'
+import Card from './components/Card'
 
 export default function Layout() {
 

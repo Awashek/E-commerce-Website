@@ -1,5 +1,5 @@
 import React from 'react'
-import Input from '../../../Input'
+import Input from '../../Input'
 
 export default function Price({handleChange}) {
   return (
@@ -13,7 +13,8 @@ export default function Price({handleChange}) {
           value=""
           name='price'
           />
-          <span> All</span>
+          <span className='checkmark'></span>
+          All
         </label>
 
         <Input
