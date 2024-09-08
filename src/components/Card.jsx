@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Card({ img, title, star, reviews, prevPrice, newPrice }) {
+export default function Card({ id, img, title, star, reviews, prevPrice, newPrice }) {
   return (
     <div className="m-4 p-4 bg-white shadow-lg rounded-lg w-60 grid grid-rows-[auto_1fr_auto]">
       <img
@@ -20,12 +21,15 @@ export default function Card({ img, title, star, reviews, prevPrice, newPrice })
       </div>
       <div className="mt-4">
         <div className="flex justify-between items-center ">
+          <Link 
+          to={`/Products/${id}`}>
           <button
             onClick={() => handleAddToCart()}
             className="bg-slate-800 text-white py-2 px-3 hover:bg-slate-600 transition rounded-full"
           >
             Add to Cart
           </button>
+          </Link>
           <button
             onClick={() => handleShopNow()}
             className="bg-orange-800 text-white py-2 px-3 rounded-full hover:bg-orange-600 transition"
