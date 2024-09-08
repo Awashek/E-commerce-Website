@@ -7,14 +7,13 @@ export default function Recommended({handleClick}) {
     border-[#e5e5e5]'>
       <h2 className='text-3xl text-gray-500 text-center pb-2'>Recommended</h2>
       <div className='flex pl-[32%] mb-6'>
-     
-      <button 
-    
+      <button
+      onClick={handleClick} 
       className='btns'>All Products</button>
-      <button className='btns'>Nike</button>
-      <button className='btns'>Adidas</button>
-      <button className='btns'>Puma</button>
-      <button className='btns'>Vans</button>
+      <Button handleClick={handleClick} title="Nike" value="Nike"/>
+      <Button handleClick={handleClick} title="Adidas" value="Adidas"/>
+      <Button handleClick={handleClick} title="Puma" value="Puma"/>
+      <Button handleClick={handleClick} title="Vans" value="Vans"/>
       </div>
     </div>
   )
