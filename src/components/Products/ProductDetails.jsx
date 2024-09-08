@@ -1,10 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { products } from '../../db/Products';// Import your products data
+import { products } from '../../db/Products';
 
-export default function ProductDetail() {
+export default function ProductDetail(props) {
   const { id } = useParams();
   const product = products.find(p => p.id === parseInt(id));
+  console.log(id)
+  console.log(props)
 
   if (!product) {
     return <h2>Product not found</h2>;
@@ -12,7 +14,6 @@ export default function ProductDetail() {
 
   return (
     <div
-    key={product.id}
     >
         
       <h1>{product.title}</h1>

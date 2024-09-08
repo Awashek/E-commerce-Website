@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Card({ id, img, title, star, reviews, prevPrice, newPrice }) {
+export default function Card({ id, img, title, star, reviews, prevPrice, newPrice, handleAddToCart }) {
   
   return (
     <div className="m-4 p-4 bg-white shadow-lg rounded-lg w-60 grid grid-rows-[auto_1fr_auto]">
@@ -25,7 +25,7 @@ export default function Card({ id, img, title, star, reviews, prevPrice, newPric
           <Link 
           to={`/Products/${id}`}>
           <button
-            onClick={() => handleAddToCart(id)}
+            onClick={handleAddToCart}
             className="bg-slate-800 text-white py-2 px-3 hover:bg-slate-600 transition rounded-full"
           >
             Add to Cart
