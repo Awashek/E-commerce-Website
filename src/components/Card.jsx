@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Card({ id, img, title, star, reviews, prevPrice, newPrice }) {
+  
   return (
     <div className="m-4 p-4 bg-white shadow-lg rounded-lg w-60 grid grid-rows-[auto_1fr_auto]">
       <img

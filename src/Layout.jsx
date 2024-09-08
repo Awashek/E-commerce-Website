@@ -12,8 +12,8 @@ export default function Layout() {
 
   const [search, setSearch] = useState("");
 
-  const handleInputChange = (event) => {
-    setSearch(event.target.value);
+  const handleInputChange = (e) => {
+    setSearch(e.target.value);
   };
 
   const filteredItems = products.filter(
@@ -28,6 +28,7 @@ export default function Layout() {
   const handleClick = (e) => {
     setSelectedCategory(e.target.value);
   };
+  
 
   function filteredData(products, selected, search) {
     let filteredProducts = products;

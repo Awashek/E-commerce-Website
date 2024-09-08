@@ -3,15 +3,18 @@ import { useParams } from 'react-router-dom';
 import { products } from '../../db/Products';// Import your products data
 
 export default function ProductDetail() {
-  const { id } = useParams(); // Get the product ID from the URL
-  const product = products.find(p => p.id === parseInt(id)); // Find the product by ID
+  const { id } = useParams();
+  const product = products.find(p => p.id === parseInt(id));
 
   if (!product) {
     return <h2>Product not found</h2>;
   }
 
   return (
-    <div>
+    <div
+    key={product.id}
+    >
+        
       <h1>{product.title}</h1>
       <img src={product.img} alt={product.title} />
       <p>Price: ${product.newPrice}</p>
