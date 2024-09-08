@@ -9,7 +9,7 @@ export default function Input({handleChange,value,title,name}) {
           value={value}
           name={name} 
           // color={color}
-          className='cursor-pointer bg-red-300'/>
+          className='cursor-pointer'/>
           <span>{title}</span>
         </label>
   )

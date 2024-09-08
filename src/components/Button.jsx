@@ -7,7 +7,7 @@ export default function Button({handleClick, value, title}) {
         value={value}
         className='btns'
         >
-            {title}
+        {title}
         </button>
         )
 }

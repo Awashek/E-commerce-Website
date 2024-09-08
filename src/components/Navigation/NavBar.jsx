@@ -6,7 +6,7 @@ export default function NavBar(props) {
     <nav className='flex justify-between items-center w-[92%] mx-auto sticky z-50'>
         <Link>
             <img className='w-16'
-            src="/public/images/logo.png" alt="logo" 
+            src="/images/logo.png" alt="logo" 
             />    
         </Link>
         <div className=''>
