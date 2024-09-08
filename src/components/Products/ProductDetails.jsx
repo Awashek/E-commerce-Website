@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { products } from '../../db/Products';
 
-export default function ProductDetail(props) {
+export default function ProductDetail() {
   const { id } = useParams();
   const product = products.find(p => p.id === parseInt(id));
 
@@ -11,9 +11,7 @@ export default function ProductDetail(props) {
   }
 
   return (
-    <div
-    >
-        
+    <div> 
       <h1>{product.title}</h1>
       <img src={product.img} alt={product.title} />
       <p>Price: ${product.newPrice}</p>
