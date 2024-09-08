@@ -24,7 +24,7 @@ export default function Card({ id, img, title, star, reviews, prevPrice, newPric
           <Link 
           to={`/Products/${id}`}>
           <button
-            onClick={() => handleAddToCart()}
+            onClick={() => handleAddToCart(id)}
             className="bg-slate-800 text-white py-2 px-3 hover:bg-slate-600 transition rounded-full"
           >
             Add to Cart
