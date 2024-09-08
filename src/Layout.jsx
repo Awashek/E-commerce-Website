@@ -52,7 +52,7 @@ export default function Layout() {
         <div className="flex flex-wrap justify-center p-4 bg-gray-100">
           {filteredProducts.map((product) => (
             <Card
-            
+              id={product.id}
               img={product.img}
               title={product.title}
               star={product.star}

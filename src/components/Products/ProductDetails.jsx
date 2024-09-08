@@ -5,8 +5,6 @@ import { products } from '../../db/Products';
 export default function ProductDetail(props) {
   const { id } = useParams();
   const product = products.find(p => p.id === parseInt(id));
-  console.log(id)
-  console.log(props)
 
   if (!product) {
     return <h2>Product not found</h2>;
