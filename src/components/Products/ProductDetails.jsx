@@ -75,7 +75,7 @@ export default function ProductDetail() {
       </div>
 
       <div>
-        <h2 className='text-xl text-semibold ml-[20%]'>Product Description</h2>
+        <h2 className='text-xl text-bold text-gray-500 '>Product Description</h2>
         <p className="w-1/2 text-gray-500" >{product.description}</p>
       </div>
       
