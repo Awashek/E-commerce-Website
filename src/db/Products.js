@@ -2,9 +2,9 @@ export const products = [
   {
     id: 1,
     img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
-    img1: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
-    img2: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
-    img3: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+    img1: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
+    img2: "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
+    img3: "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg",
     title: "Nike Air Monarch IV",
     star: 5,
     reviews: "(123 reviews)",

@@ -9,7 +9,9 @@ export default function Recommended({handleClick}) {
       <button
       onClick={handleClick} 
       className='btns'>All Products</button>
-      <Button handleClick={handleClick} title="Nike" value="Nike"/>
+      <Button 
+      className="bg-red-500"
+      handleClick={handleClick} title="Nike" value="Nike"/>
       <Button handleClick={handleClick} title="Adidas" value="Adidas"/>
       <Button handleClick={handleClick} title="Puma" value="Puma"/>
       <Button handleClick={handleClick} title="Vans" value="Vans"/>
