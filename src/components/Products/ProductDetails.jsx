@@ -60,16 +60,44 @@ export default function ProductDetail() {
     </div>
 
     {/* Right content */}
-    <div className="w-1/2 flex gap-4 text-black pl-10 border border-gray-100">
-    <div className='flex flex-row justify-between'>
-    <h2 
-    className='text-red-500 text-xl font-bold'>$ {product.newPrice}</h2>
-    <h2 className='text-gray-700 text-xl line-through '>{product.prevPrice}</h2>
-    <p><span>Review:</span>{product.star}</p>
-    </div>
-      
+    <div className="w-1/2 flex flex-col gap-4 text-black pl-10 border border-gray-100 pb-8">
+  {/* Price and Review Section */}
+  <div className="flex justify-between items-start">
+    <div className='flex gap-2 p-4'>
+      <h2 className='text-red-500 text-xl font-bold'>Price: ${product.newPrice}</h2>
+      <h2 className='text-gray-500 text-xl line-through pl-3'>{product.prevPrice}</h2>
     </div>
 
+    <div className="text-right p-4">
+      <p className='text-xl text-gray-500'>Review: {product.star}</p>
+    </div>
+  </div>
+
+  {/* Quantity Section */}
+  <div className='p-4'>
+    <h2 className="text-xl font-semibold">Size</h2>
+    <select className="border border-gray-300 rounded-md p-2 w-40">
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+   
+  </div>
+
+  {/* Size Dropdown Section */}
+  <div className='p-4'>
+    <h2 className="text-xl font-semibold">Select Size</h2>
+    <input
+      type="number"
+      className="border border-gray-300 rounded-md w-16 pl-2"
+      defaultValue={1}
+      min={1}
+    />
+  </div>
+</div>
     </div>
   </>
     );
