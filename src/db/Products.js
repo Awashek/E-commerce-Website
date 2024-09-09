@@ -4,7 +4,6 @@ export const products = [
     img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
     img1: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
     img2: "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
-    img3: "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg",
     title: "Nike Air Monarch IV",
     star: 5,
     reviews: "(123 reviews)",
@@ -13,7 +12,7 @@ export const products = [
     company: "Nike",
     color: "white",
     category: "sneakers",
-    description:"jkansjsank askjnkjcasnksajncsnkaslnsa asnkcasnjscaacsnksalnsckalnsclak anskk skasnk ksanksac knaskac knakncs nkasci asknasi acasicakn "
+    description:"The Nike Air Monarch IV is a classic, versatile sneaker designed for everyday comfort and durability. Known for its supportive structure and cushioned feel, it features a lightweight leather upper that provides durability and a premium look. The full-length encapsulated Air-Sole unit ensures excellent cushioning, while the rubber outsole offers enhanced traction on various surfaces. Its sleek design and solid construction make it a popular choice for both casual wear and light training. The Nike Air Monarch IV strikes a perfect balance between style, functionality, and all-day comfort. "
   },
   {
     id: 2,
