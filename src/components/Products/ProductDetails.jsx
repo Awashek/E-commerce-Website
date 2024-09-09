@@ -118,6 +118,9 @@ export default function ProductDetail() {
       <i className="fa-solid fa-cart-plus text-white"></i> Add to cart</button>
     </div>
   </div>
+  <div>
+    <h1>Delivery</h1>
+  </div>
 </div>
     </div>
   </>
