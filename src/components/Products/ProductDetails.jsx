@@ -73,10 +73,14 @@ export default function ProductDetail() {
     </div>
   </div>
 
-  {/* Quantity Section */}
-  <div className='p-4'>
-    <h2 className="text-xl font-semibold">Size</h2>
-    <select className="border border-gray-300 rounded-md p-2 w-40">
+
+  {/* Size Dropdown Section */}
+ 
+  <div className='p-4 flex flex-row'>
+    <div>
+    <h2 className="text-xl font-semibold pb-2">Size</h2>
+    <select className="border border-gray-300 rounded-md p-2 w-60" defaultValue="">
+      <option value="" disabled className="text-gray-500">Select Size</option>
       <option value="XS">XS</option>
       <option value="S">S</option>
       <option value="M">M</option>
@@ -84,18 +88,35 @@ export default function ProductDetail() {
       <option value="XL">XL</option>
       <option value="XXL">XXL</option>
     </select>
-   
+    </div>
+    <div className='flex flex-row pt-10 pl-10'>
+      <div>
+    <h2 className='text-lg'>Size Chart</h2>
+      </div>
+      <div>
+      <i className="fa-solid fa-shirt text-lg pl-1"></i>
+      </div>
+    </div>
   </div>
 
-  {/* Size Dropdown Section */}
-  <div className='p-4'>
-    <h2 className="text-xl font-semibold">Select Size</h2>
+ {/* Quantity Section */}
+  <div className='p-4 flex flex-row'>
+    <div>
     <input
       type="number"
-      className="border border-gray-300 rounded-md w-16 pl-2"
+      className="border border-gray-300 border-l bg-gray-100 rounded-md w-16 px-4 py-2  "
       defaultValue={1}
       min={1}
     />
+    </div>
+    
+    <div className='pl-[5%]'>
+    
+      <button
+      className='px-20 py-2 items-center border border-gray-300 rounded-md bg-slate-700 hover:bg-slate-800 text-white'
+      > 
+      <i className="fa-solid fa-cart-plus text-white"></i> Add to cart</button>
+    </div>
   </div>
 </div>
     </div>
