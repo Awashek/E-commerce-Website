@@ -60,20 +60,15 @@ export default function ProductDetail() {
     </div>
 
     {/* Right content */}
-    <div className="w-1/2 flex gap-4 text-black pl-10 border border-gray-100 pb-5">
-  
-  {/* Left side for price details */}
-  <div className='flex flex-row bg-red-300'>
-    <h2 className='text-red-500 text-xl font-bold'>$ {product.newPrice}</h2>
-    <h2 className='text-gray-700 text-xl line-through'>{product.prevPrice}</h2>
-  </div>
-
-  {/* Right side for review */}
-  <div className="text-right">
-    <p><span>Review:</span> {product.star}</p>
-  </div>
-  
-</div>
+    <div className="w-1/2 flex gap-4 text-black pl-10 border border-gray-100">
+    <div className='flex flex-row justify-between'>
+    <h2 
+    className='text-red-500 text-xl font-bold'>$ {product.newPrice}</h2>
+    <h2 className='text-gray-700 text-xl line-through '>{product.prevPrice}</h2>
+    <p><span>Review:</span>{product.star}</p>
+    </div>
+      
+    </div>
 
     </div>
   </>
