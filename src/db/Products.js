@@ -2,6 +2,9 @@ export const products = [
   {
     id: 1,
     img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+    img1: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+    img2: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+    img3: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
     title: "Nike Air Monarch IV",
     star: 5,
     reviews: "(123 reviews)",
@@ -10,6 +13,7 @@ export const products = [
     company: "Nike",
     color: "white",
     category: "sneakers",
+    description:"jkansjsank askjnkjcasnksajncsnkaslnsa asnkcasnjscaacsnksalnsckalnsclak anskk skasnk ksanksac knaskac knakncs nkasci asknasi acasicakn "
   },
   {
     id: 2,

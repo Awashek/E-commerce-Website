@@ -4,7 +4,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   const handleNavigation = () => {
-    navigate('/Products')
+    navigate('/products')
   }
   return (
     <>

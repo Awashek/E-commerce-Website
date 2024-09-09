@@ -8,7 +8,6 @@ export default function Input({handleChange,value,title,name}) {
           type="radio" 
           value={value}
           name={name} 
-          // color={color}
           className='cursor-pointer'/>
           <span>{title}</span>
         </label>
