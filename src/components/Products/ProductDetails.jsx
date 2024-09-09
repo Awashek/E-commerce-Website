@@ -44,45 +44,54 @@ export default function ProductDetail() {
 //       </div>
 //   );
 // }
-<div className="flex flex-col gap-4 min-h-screen p-5">
+<>
+<h2 className="text-2xl font-semibold pl-5 pt-3">{product.title}</h2>
+<div className="flex justify-between gap-4 min-h-screen p-5">
+{/* Left content */}
 
-      <h2 className="text-2xl font-semibold text-center text-gray-500">{product.title}</h2>
-      <div className='flex flex-col gap-4'>
-      <div className="w-1/2 bg-yellow-200 pl-[13%] border border-black">
-        <img src={mainImage} alt={product.title} className="w-[400px] h-[400px]object-cover mb-5 items-center" />
-      </div>
-
-
-      <div className="w-1/2 flex gap-4 flex-row bg-red-300 pl-[13%] ">
-        <img 
-          src={product.img} 
-          alt="Small 1" 
-          onClick={() => handleImageClick(product.img)} 
-          className="w-[100px] h-[100px] object-contain cursor-pointer" 
-        />
-        <img 
-          src={product.img1} 
-          alt="Small 2" 
-          onClick={() => handleImageClick(product.img1)} 
-          className="w-[100px] h-[100px] object-contain cursor-pointer" 
-        />
-        <img 
-          src={product.img2} 
-          alt="Small 3" 
-          onClick={() => handleImageClick(product.img2)} 
-          className="w-[100px] h-[100px] object-contain cursor-pointer" 
-        />
-      </div>
-
-      <div>
-        <h2 className='text-xl text-bold text-gray-500 '>Product Description</h2>
-        <p className="w-1/2 text-gray-500" >{product.description}</p>
-      </div>
-      
-      </div>
-      <div>
-        hello
-      </div>
+<div className="flex flex-col gap-4 w-1/2">
+  
+  <div className='flex flex-col gap-4'>
+    <div className="w-full bg-yellow-200 pl-[13%]">
+      <img src={mainImage} alt={product.title} className="w-[400px] h-[400px] object-contain mb-5 items-center" />
     </div>
+
+    <div className="w-full flex gap-4 flex-row bg-red-300 pl-[13%] ">
+      <img 
+        src={product.img} 
+        alt="Small 1" 
+        onClick={() => handleImageClick(product.img)} 
+        className="w-[100px] h-[100px] object-contain cursor-pointer" 
+      />
+      <img 
+        src={product.img1} 
+        alt="Small 2" 
+        onClick={() => handleImageClick(product.img1)} 
+        className="w-[100px] h-[100px] object-contain cursor-pointer" 
+      />
+      <img 
+        src={product.img2} 
+        alt="Small 3" 
+        onClick={() => handleImageClick(product.img2)} 
+        className="w-[100px] h-[100px] object-contain cursor-pointer" 
+      />
+    </div>
+
+    <div>
+      <h2 className='text-xl text-bold text-gray-700 '>Product Description</h2>
+      <p className="w-full text-gray-500">{product.description}</p>
+    </div>
+  </div>
+</div>
+
+{/* Right content */}
+<div className="w-1/2 flex bg-red-200">
+  <div className=" bg-blue-100">
+    hello
+  </div>
+</div>
+
+</div>
+</>
   );
 }
