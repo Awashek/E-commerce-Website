@@ -27,7 +27,7 @@ export default function ProductDetail() {
     <div className="flex flex-col gap-4 w-1/2  ">
       
       <div className='flex flex-col '>
-        <div className="w-full pl-[20%] border border-gray-300">
+        <div className="w-full pl-[20%] border border-gray-200">
           <img src={mainImage} alt={product.title} className="w-[400px] h-[400px] object-contain mb-5 items-center" />
         </div>
 
@@ -36,19 +36,19 @@ export default function ProductDetail() {
             src={product.img} 
             alt="Small 1" 
             onClick={() => handleImageClick(product.img)} 
-            className="w-[100px] h-[100px] object-contain cursor-pointer border border-gray-200" 
+            className="w-[100px] h-[100px] object-contain cursor-pointer border border-gray-100 rounded-sm" 
           />
           <img 
             src={product.img1} 
             alt="Small 2" 
             onClick={() => handleImageClick(product.img1)} 
-            className="w-[100px] h-[100px] object-contain cursor-pointer border border-gray-200" 
+            className="w-[100px] h-[100px] object-contain cursor-pointer border border-gray-100 rounded-sm" 
           />
           <img 
             src={product.img2} 
             alt="Small 3" 
             onClick={() => handleImageClick(product.img2)} 
-            className="w-[100px] h-[100px] object-contain cursor-pointer border border-gray-200" 
+            className="w-[100px] h-[100px] object-contain cursor-pointer border border-gray-100 rounded-sm" 
           />
         </div>
 
@@ -60,11 +60,20 @@ export default function ProductDetail() {
     </div>
 
     {/* Right content */}
-    <div className="w-1/2 flex bg-red-200">
-      <div className=" bg-blue-100">
-        hello
-      </div>
-    </div>
+    <div className="w-1/2 flex gap-4 text-black pl-10 border border-gray-100 pb-5">
+  
+  {/* Left side for price details */}
+  <div className='flex flex-row bg-red-300'>
+    <h2 className='text-red-500 text-xl font-bold'>$ {product.newPrice}</h2>
+    <h2 className='text-gray-700 text-xl line-through'>{product.prevPrice}</h2>
+  </div>
+
+  {/* Right side for review */}
+  <div className="text-right">
+    <p><span>Review:</span> {product.star}</p>
+  </div>
+  
+</div>
 
     </div>
   </>
