@@ -3,23 +3,22 @@ import { Link } from 'react-router-dom';
 
 export default function Card({ id, img, title, star, reviews, prevPrice, newPrice}) {
 
-  // State to track number of items in the cart
+
   const [cartCount, setCartCount] = useState(0);
 
-  // Function to handle adding items to cart
+
   const handleAddToCart = () => {
-    setCartCount(cartCount + 1); // Increase cart count by 1
+    setCartCount(cartCount + 1);
   };
 
-  // Function to handle removing items from cart
+
   const handleRemoveFromCart = () => {
-    setCartCount(0); // Reset cart count to 0 when deleting the item
+    setCartCount(0); 
   };
 
-  // Function to handle decrementing cart items
   const handleDecrement = () => {
     if (cartCount > 1) {
-      setCartCount(cartCount - 1); // Decrease count if more than 1
+      setCartCount(cartCount - 1); 
     }
   }
   return (
@@ -45,14 +44,14 @@ export default function Card({ id, img, title, star, reviews, prevPrice, newPric
         <Link>
         {cartCount === 0 ? (
         <button
-          onClick={handleAddToCart} // Call handleAddToCart when clicked
+          onClick={handleAddToCart}
           className="bg-white text-black py-1 px-5 rounded-md border border-solid transition hover:text-white hover:bg-slate-800 flex items-center"
         >
           <i className="fa-solid fa-cart-plus pr-2"></i>
           Cart
         </button>
       ) : (
-        // If cartCount is more than 0, show the counter with increment and decrement/delete buttons
+
         <div className="flex items-center">
           {/* Show delete icon if cartCount is 1, otherwise show the decrement button */}
           {cartCount === 1 ? (
