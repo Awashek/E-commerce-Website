@@ -118,8 +118,8 @@ export default function ProductDetail() {
       <i className="fa-solid fa-cart-plus text-white"></i> Add to cart</button>
     </div>
   </div>
-    <h1 className='pl-4'>Delivery</h1>
-    <p className='pl-4'>Free standard shipping on order over $35 before tax, plus free returns</p>
+    <h1 className='pl-4 font-bold'>Delivery</h1>
+    <p className='pl-4'>Free standard shipping on order <span className='font-bold'>over $35</span> before tax, plus free returns</p>
 
     <div className="p-10">
 

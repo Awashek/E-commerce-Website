@@ -68,18 +68,12 @@ export default function Layout() {
   const result = filteredData(products, selectedCategory, search);
 
 
-  const handleAddToCart = () => {
-    console.log("added")
-  }
-
-  const handleShopNow = () => {
-    console.log("added")
-  }
+ 
 
   return (
     <div>
       <NavBar search={search} handleInputChange={handleInputChange}/>
-      <Outlet context={{result, handleChange, handleClick, handleShopNow}}/>
+      <Outlet context={{result, handleChange, handleClick}}/>
       <Footer />
     </div>
   )

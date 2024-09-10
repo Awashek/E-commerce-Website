@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Card({ id, img, title, star, reviews, prevPrice, newPrice, handleAddToCart }) {
   
   return (
-    <Link
-    to={`/products/${id}`}
+    <div
     className="m-4 p-4 bg-white shadow-lg rounded-lg w-60 grid grid-rows-[auto_1fr_auto]">
       <img
         src={img}
@@ -24,23 +23,26 @@ export default function Card({ id, img, title, star, reviews, prevPrice, newPric
       </div>
       <div className="mt-4">
         <div className="flex justify-between items-center ">
-          <div 
+          <Link >
+            <button
+            className='px-6 py-2 items-center border border-gray-300 rounded-md bg-slate-700 hover:bg-slate-800 text-white'
+            > 
+            <i className="fa-solid fa-cart-plus text-white"></i> 
+            Cart
+            </button>
+          </Link>
+          <Link
+          to={`/products/${id}`}
           >
-          <button
-            onClick={handleAddToCart}
-            className="bg-slate-800 text-white py-2 px-3 hover:bg-slate-600 transition rounded-full"
+            <button
+            className="bg-gray-500 text-white py-2 px-3 rounded-md hover:bg-gray-600 transition"
           >
-            Add to Cart
+            Show More
           </button>
-          </div>
-          <button
-            onClick={() => handleShopNow()}
-            className="bg-orange-800 text-white py-2 px-3 rounded-full hover:bg-orange-600 transition"
-          >
-            Shop Now
-          </button>
+          </Link>
+          
         </div>
       </div>
-    </Link>
+    </div>
   )
 }
