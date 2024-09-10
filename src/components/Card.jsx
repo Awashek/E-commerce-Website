@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Card({ id, img, title, star, reviews, prevPrice, newPrice, handleAddToCart }) {
+export default function Card({ id, img, title, star, reviews, prevPrice, newPrice}) {
   
   return (
     <div
@@ -23,19 +23,19 @@ export default function Card({ id, img, title, star, reviews, prevPrice, newPric
       </div>
       <div className="mt-4">
         <div className="flex justify-between items-center ">
-          <Link >
-            <button
-            className='px-6 py-2 items-center border border-gray-300 rounded-md bg-slate-700 hover:bg-slate-800 text-white'
-            > 
-            <i className="fa-solid fa-cart-plus text-white"></i> 
+        <Link>
+          <button
+            className="bg-white text-black py-2 px-5 rounded-md border border-solid transition hover:text-white hover:bg-slate-800 flex items-center"
+            >
+            <i className="fa-solid fa-cart-plus pr-2"></i>
             Cart
-            </button>
-          </Link>
+          </button>
+        </Link>
           <Link
           to={`/products/${id}`}
           >
             <button
-            className="bg-white text-black py-2 px-3 rounded-md border border-solid transition hover:text-white hover:bg-gray-500"
+            className="bg-white text-black py-2 px-3 rounded-md border border-solid transition hover:text-white hover:bg-slate-800"
           >
             Show More
           </button>

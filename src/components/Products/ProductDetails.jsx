@@ -60,7 +60,7 @@ export default function ProductDetail() {
     </div>
 
     {/* Right content */}
-    <div className="w-1/2 flex flex-col gap-4 text-black pl-10 border border-gray-100 pb-8">
+    <div className="w-1/2 flex flex-col gap-4 text-black pl-10 border border-gray-200 pb-8">
   {/* Price and Review Section */}
   <div className="flex justify-between items-start">
     <div className='flex gap-2 p-4'>
@@ -113,7 +113,7 @@ export default function ProductDetail() {
     <div className='pl-[5%]'>
     
       <button
-      className='px-20 py-2 items-center border border-gray-300 rounded-md bg-slate-700 hover:bg-slate-800 text-white'
+      className='px-20 py-2 items-center border border-gray-300 rounded-md bg-slate-800 hover:bg-slate-700 text-white'
       > 
       <i className="fa-solid fa-cart-plus text-white"></i> Add to cart</button>
     </div>
