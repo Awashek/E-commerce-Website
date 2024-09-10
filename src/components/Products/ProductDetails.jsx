@@ -118,11 +118,52 @@ export default function ProductDetail() {
       <i className="fa-solid fa-cart-plus text-white"></i> Add to cart</button>
     </div>
   </div>
-  <div>
     <h1 className='pl-4'>Delivery</h1>
+    <p className='pl-4'>Free standard shipping on order over $35 before tax, plus free returns</p>
+
+    <div className="p-10">
+
+  <div className="flex justify-between border-b-2 border-[#e5e5e5] pb-4 text-gray-500 font-bold">
+    <h2 className="w-1/3 text-left">TYPE</h2>
+    <h2 className="w-1/3 text-center">HOW LONG</h2>
+    <h2 className="w-1/3 text-right">HOW MUCH</h2>
   </div>
-</div>
+
+
+  <div className="flex justify-between border-b-2 border-[#e5e5e5] py-4">
+    <p className="w-1/3 text-left">Standard delivery</p>
+    <p className="w-1/3 text-center">1-4 business days</p>
+    <p className="w-1/3 text-right">$4.50</p>
+  </div>
+
+  <div className="flex justify-between border-b-2 border-[#e5e5e5] py-4">
+    <p className="w-1/3 text-left">Express delivery</p>
+    <p className="w-1/3 text-center">1 business day</p>
+    <p className="w-1/3 text-right">$10.00</p>
+  </div>
+
+  <div className="flex justify-between border-b-2 border-[#e5e5e5] py-4">
+    <p className="w-1/3 text-left">Pick up in store</p>
+    <p className="w-1/3 text-center">1-3 business days</p>
+    <p className="w-1/3 text-right">Free</p>
+  </div>
+  </div>
+    <div className='gap-8 pl-4'>
+      <h2>Return</h2>
+      <p>You have <span className='font-bold'>60 days</span> to return the items using any of the following methods:</p>
     </div>
+    <div className='pl-4'>
+    <div className='flex flex-row items-center'>
+      <i className="fa-regular fa-circle text-sm"></i>
+      <p className='pl-2'>Free store return</p>
+    </div>
+    <div className='flex flex-row items-center'>
+      <i className="fa-regular fa-circle text-sm"></i>
+      <p className='pl-2'>Free returns via USPS Dropoff service</p>
+    </div>
+    </div>
+  </div>
+  </div>
   </>
     );
   }

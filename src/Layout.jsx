@@ -59,7 +59,6 @@ export default function Layout() {
               reviews={product.reviews}
               prevPrice={product.prevPrice}
               newPrice={product.newPrice}
-              
             />
           ))}
         </div>
