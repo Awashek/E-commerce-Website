@@ -16,7 +16,7 @@ export default function ProductDetail() {
   const handleImageClick = (image) => {
     setMainImage(image)
   }
-
+  
   return (
 
   <>
