@@ -68,7 +68,7 @@ export default function Layout() {
   const result = filteredData(products, selectedCategory, search);
 
 
- 
+
 
   return (
     <div>

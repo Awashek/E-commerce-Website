@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Card({ id, img, title, star, reviews, prevPrice, newPrice}) {
+
   // State to track number of items in the cart
   const [cartCount, setCartCount] = useState(0);
 
@@ -74,7 +75,7 @@ export default function Card({ id, img, title, star, reviews, prevPrice, newPric
             {cartCount}
           </span>
           <button 
-            onClick={() => setCartCount(cartCount + 1)} // Increase cart count when clicked
+            onClick={handleAddToCart} // Increase cart count when clicked
             className="px-3 py-1 bg-gray-300 rounded-r-md"
           >
             +
