@@ -119,7 +119,7 @@ export default function ProductDetail() {
     </div>
   </div>
   <div>
-    <h1>Delivery</h1>
+    <h1 className='pl-4'>Delivery</h1>
   </div>
 </div>
     </div>
