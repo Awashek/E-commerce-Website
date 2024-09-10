@@ -57,7 +57,7 @@ export default function NavBar(props) {
             />
         <i className="fa-solid fa-cart-shopping text-2xl items-center mx-6 text-slate-800"></i>
             <button className='bg-slate-800 text-white 
-                px-5 py-2 rounded-full hover:bg-slate-900'>
+                px-5 py-2 rounded-md hover:bg-slate-900'>
                 Sign in
             </button>
         </div>

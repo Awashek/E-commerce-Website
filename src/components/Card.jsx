@@ -35,7 +35,7 @@ export default function Card({ id, img, title, star, reviews, prevPrice, newPric
           to={`/products/${id}`}
           >
             <button
-            className="bg-gray-500 text-white py-2 px-3 rounded-md hover:bg-gray-600 transition"
+            className="bg-white text-black py-2 px-3 rounded-md border border-solid transition hover:text-white hover:bg-gray-500"
           >
             Show More
           </button>
