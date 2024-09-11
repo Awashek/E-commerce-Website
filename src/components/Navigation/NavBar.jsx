@@ -43,7 +43,6 @@ export default function NavBar(props) {
                             >Login
                     </NavLink>
                 </li>
-                
             </ul>
         
         </div>              
