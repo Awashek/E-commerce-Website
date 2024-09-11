@@ -1,5 +1,11 @@
 import {Link, NavLink} from 'react-router-dom'
+import useHandleCart from '../Products/UseAddToCart'
+import { useState } from 'react';
 export default function NavBar(props) {
+
+    const [cartCount, setCartCount] = useState(0);
+    const {} = useHandleCart(cartCount)
+
     const {search, handleInputChange} = props
     return (
     <header className='bg-slate-100 shadow sticky z-50 top-0'>
@@ -54,7 +60,11 @@ export default function NavBar(props) {
             value={search}
             className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
             />
-        <i className="fa-solid fa-cart-shopping text-2xl items-center mx-6 text-slate-800"></i>
+            <div>
+            <i className="fa-solid fa-cart-shopping text-2xl items-center mx-6 text-slate-800"></i>
+            <span>{cartCount}</span>
+            </div>
+        
             <button className='bg-slate-800 text-white 
                 px-5 py-2 rounded-md hover:bg-slate-900'>
                 Sign in
