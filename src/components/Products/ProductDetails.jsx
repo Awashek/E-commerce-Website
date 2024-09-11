@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { products } from '../../db/Products';
 import useHandleCart from './UseAddToCart'
 import { Link } from "react-router-dom";
+
 export default function ProductDetail() {
   const { id } = useParams();
   const product = products.find(p => p.id === parseInt(id));
@@ -64,7 +65,7 @@ export default function ProductDetail() {
 
     {/* Right content */}
     <div className="w-1/2 flex flex-col gap-4 text-black pl-10 border border-gray-200 pb-8">
-  {/* Price and Review Section */}
+  
   <div className="flex justify-between items-start">
     <div className='flex gap-2 p-4'>
       <h2 className='text-red-500 text-xl font-bold'>Price: ${product.newPrice}</h2>
