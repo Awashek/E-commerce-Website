@@ -1,26 +1,26 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useOutlet, useOutletContext } from 'react-router-dom';
 
 export default function Card({ id, img, title, star, reviews, prevPrice, newPrice}) {
 
-
-  const [cartCount, setCartCount] = useState(0);
-
-
-  const handleAddToCart = () => {
-    setCartCount(cartCount + 1);
-  };
+  const {} = useOutletContext();
+  // const [cartCount, setCartCount] = useState(0);
 
 
-  const handleRemoveFromCart = () => {
-    setCartCount(0); 
-  };
+  // const handleAddToCart = () => {
+  //   setCartCount(cartCount + 1);
+  // };
 
-  const handleDecrement = () => {
-    if (cartCount > 1) {
-      setCartCount(cartCount - 1); 
-    }
-  }
+
+  // const handleRemoveFromCart = () => {
+  //   setCartCount(0); 
+  // };
+
+  // const handleDecrement = () => {
+  //   if (cartCount > 1) {
+  //     setCartCount(cartCount - 1); 
+  //   }
+  // }
   return (
     <div
     className="m-4 p-4 bg-white shadow-lg rounded-lg w-60 grid grid-rows-[auto_1fr_auto]">
