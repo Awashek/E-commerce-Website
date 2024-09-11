@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../Button'
+
 export default function Recommended({handleClick}) {
   return (
     <div className='mt-6 flex-grow border-b-2 border-solid 

@@ -2,6 +2,8 @@ import React,{useState} from 'react';
 import { useParams } from 'react-router-dom';
 import { products } from '../../db/Products';
 
+
+
 export default function ProductDetail() {
   const { id } = useParams();
   const product = products.find(p => p.id === parseInt(id));
@@ -15,7 +17,9 @@ export default function ProductDetail() {
   const handleImageClick = (image) => {
     setMainImage(image)
   }
-  
+  // const [cartCount, setCartCount] = useState()
+  // const {handleAddToCart,handleDecrement,handleRemoveFromCart} = useHandleCart(cartCount, setCartCount)
+
   return (
 
   <>
