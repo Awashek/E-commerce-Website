@@ -38,20 +38,18 @@ export default function Card({ id, img, title, star, reviews, prevPrice, newPric
           Cart
         </button>
       ) : (
-
-        <div className="flex items-center">
-          {/* Show delete icon if cartCount is 1, otherwise show the decrement button */}
+        <div className="flex items-center"> 
           {cartCount === 1 ? (
             <button 
-              onClick={handleRemoveFromCart} // Remove the item from the cart when clicked
+              onClick={handleRemoveFromCart} 
               className="text-xs border px-3 py-2 bg-gray-300 rounded-l-md"
             >
               <i className="fa-solid fa-trash"></i>
             </button>
           ) : (
             <button 
-              onClick={handleDecrement} // Decrease cart count when clicked
-              className="px-3 py-1 bg-gray-300 rounded-l-md"
+              onClick={handleDecrement} 
+              className="px-3 py-1 bg-gray-300 rounded-l-md text-lg"
             >
               -
             </button>
@@ -59,11 +57,11 @@ export default function Card({ id, img, title, star, reviews, prevPrice, newPric
           
             <input
             value={cartCount}
-            onChange={(e)=>setCartCount(e.target.value)}
+            onChange={(e)=>setCartCount(Number(e.target.value))}
             className='className="px-2 py-1 border-t-1 border-gray-300 bg-white w-6 text-sm text-center'
             />
           <button 
-            onClick={handleAddToCart} // Increase cart count when clicked
+            onClick={handleAddToCart}
             className="px-3 py-1 bg-gray-300 rounded-r-md"
           >
             +

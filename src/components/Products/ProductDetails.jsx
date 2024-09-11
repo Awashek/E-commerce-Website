@@ -1,9 +1,8 @@
 import React,{useState} from 'react';
 import { useParams } from 'react-router-dom';
 import { products } from '../../db/Products';
-
-
-
+import useHandleCart from './UseAddToCart'
+import { Link } from "react-router-dom";
 export default function ProductDetail() {
   const { id } = useParams();
   const product = products.find(p => p.id === parseInt(id));
@@ -17,8 +16,9 @@ export default function ProductDetail() {
   const handleImageClick = (image) => {
     setMainImage(image)
   }
-  // const [cartCount, setCartCount] = useState()
-  // const {handleAddToCart,handleDecrement,handleRemoveFromCart} = useHandleCart(cartCount, setCartCount)
+  
+  const [cartCount, setCartCount] = useState(0);
+  const {handleAddToCart,handleDecrement,handleRemoveFromCart} = useHandleCart(cartCount, setCartCount)
 
   return (
 
@@ -104,22 +104,47 @@ export default function ProductDetail() {
 
  {/* Quantity Section */}
   <div className='p-4 flex flex-row'>
-    <div>
-    <input
-      type="number"
-      className="border border-gray-300 border-l bg-gray-100 rounded-md w-16 px-4 py-2  "
-      defaultValue={1}
-      min={1}
-    />
-    </div>
-    
-    <div className='pl-[5%]'>
-    
-      <button
-      className='px-20 py-2 items-center border border-gray-300 rounded-md bg-slate-800 hover:bg-slate-700 text-white'
-      > 
-      <i className="fa-solid fa-cart-plus text-white"></i> Add to cart</button>
-    </div>
+  <Link>
+        {cartCount === 0 ? (
+        <button
+          onClick={handleAddToCart}
+          className="bg-slate-800 text-white py-1 px-32 rounded-md border border-solid transition hover:text-slate-800 hover:bg-white flex items-center"
+        >
+          <i className="fa-solid fa-cart-plus pr-2"></i>
+          Cart
+        </button>
+      ) : (
+        <div className="flex items-center"> 
+          {cartCount === 1 ? (
+            <button 
+              onClick={handleRemoveFromCart} 
+              className="text-xs border px-7 py-2 bg-gray-300 rounded-l-md"
+            >
+              <i className="fa-solid fa-trash"></i>
+            </button>
+          ) : (
+            <button 
+              onClick={handleDecrement} 
+              className="px-7 py-1 bg-gray-300 rounded-l-md text-lg"
+            >
+              -
+            </button>
+          )}
+          
+            <input
+            value={cartCount}
+            onChange={(e)=>setCartCount(Number(e.target.value))}
+            className='className="px-2 py-1 border-t-1 border-gray-300 bg-white w-130 text-lg text-center'
+            />
+          <button 
+            onClick={handleAddToCart}
+            className="px-7 py-1 bg-gray-300 rounded-r-md"
+          >
+            +
+          </button>
+        </div>
+      )}
+        </Link>
   </div>
     <h1 className='pl-4 font-bold'>Delivery</h1>
     <p className='pl-4'>Free standard shipping on order <span className='font-bold'>over $35</span> before tax, plus free returns</p>
