@@ -1,12 +1,11 @@
 import {Link, NavLink} from 'react-router-dom'
 import useHandleCart from '../Products/UseAddToCart'
 import { useState } from 'react';
-export default function NavBar(props) {
+export default function NavBar({search, handleInputChange}) {
 
     const [cartCount, setCartCount] = useState(0);
-    const {} = useHandleCart(cartCount)
+    const {handleAddToCart,handleDecrement,handleRemoveFromCart} = useHandleCart(cartCount, setCartCount)
 
-    const {search, handleInputChange} = props
     return (
     <header className='bg-slate-100 shadow sticky z-50 top-0'>
     <nav className='flex justify-between items-center w-[92%] mx-auto sticky z-50'>
