@@ -52,6 +52,7 @@ export default function Layout() {
         <div className="flex flex-wrap justify-center p-4 bg-gray-100">
           {filteredProducts.map((product) => (
             <Card
+              key={product.id}
               id={product.id}
               img={product.img}
               title={product.title}
@@ -88,7 +89,12 @@ export default function Layout() {
   return (
     <div>
       <NavBar search={search} handleInputChange={handleInputChange}/>
-      <Outlet context={{result, handleChange, handleClick}}/>
+      <Outlet context={{
+        result, handleChange,
+        handleClick,cartCount,
+        handleAddToCart,
+        handleRemoveFromCart,
+        handleDecrement}}/>
       <Footer />
     </div>
   )

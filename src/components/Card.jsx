@@ -3,7 +3,7 @@ import { Link, useOutlet, useOutletContext } from 'react-router-dom';
 
 export default function Card({ id, img, title, star, reviews, prevPrice, newPrice}) {
 
-  const {} = useOutletContext();
+  // const {cartCount,handleAddToCart,handleRemoveFromCart,handleDecrement} = useOutletContext();
   // const [cartCount, setCartCount] = useState(0);
 
 
