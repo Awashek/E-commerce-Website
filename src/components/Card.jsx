@@ -1,26 +1,13 @@
-import React, { useContext, useState } from 'react';
-import { Link, useOutlet, useOutletContext } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import useHandleCart from './Products/UseAddToCart';
 
 export default function Card({ id, img, title, star, reviews, prevPrice, newPrice}) {
 
-  // const {cartCount,handleAddToCart,handleRemoveFromCart,handleDecrement} = useOutletContext();
-  // const [cartCount, setCartCount] = useState(0);
+  const [cartCount, setCartCount] = useState(0);
+  const {handleAddToCart,handleDecrement,handleRemoveFromCart} = useHandleCart(cartCount, setCartCount)
 
-
-  // const handleAddToCart = () => {
-  //   setCartCount(cartCount + 1);
-  // };
-
-
-  // const handleRemoveFromCart = () => {
-  //   setCartCount(0); 
-  // };
-
-  // const handleDecrement = () => {
-  //   if (cartCount > 1) {
-  //     setCartCount(cartCount - 1); 
-  //   }
-  // }
+  
   return (
     <div
     className="m-4 p-4 bg-white shadow-lg rounded-lg w-60 grid grid-rows-[auto_1fr_auto]">
@@ -70,9 +57,11 @@ export default function Card({ id, img, title, star, reviews, prevPrice, newPric
             </button>
           )}
           
-          <span className="px-2 py-1 border-t-1 border-gray-300  bg-white">
-            {cartCount}
-          </span>
+            <input
+            value={cartCount}
+            onChange={(e)=>setCartCount(e.target.value)}
+            className='className="px-2 py-1 border-t-1 border-gray-300 bg-white w-6 text-sm text-center'
+            />
           <button 
             onClick={handleAddToCart} // Increase cart count when clicked
             className="px-3 py-1 bg-gray-300 rounded-r-md"

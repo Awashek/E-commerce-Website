@@ -67,34 +67,12 @@ export default function Layout() {
   }
 
   const result = filteredData(products, selectedCategory, search);
-
-  const [cartCount, setCartCount] = useState(0);
-
-
-  const handleAddToCart = () => {
-    setCartCount(cartCount + 1);
-  };
-
-
-  const handleRemoveFromCart = () => {
-    setCartCount(0); 
-  };
-
-  const handleDecrement = () => {
-    if (cartCount > 1) {
-      setCartCount(cartCount - 1); 
-    }
-  }
-
   return (
     <div>
       <NavBar search={search} handleInputChange={handleInputChange}/>
       <Outlet context={{
         result, handleChange,
-        handleClick,cartCount,
-        handleAddToCart,
-        handleRemoveFromCart,
-        handleDecrement}}/>
+        handleClick}}/>
       <Footer />
     </div>
   )
