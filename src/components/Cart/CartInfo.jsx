@@ -9,7 +9,7 @@ export default function CartInfo() {
         <h2 className='text-4xl'>SHOPPING CART</h2>  
     </div>
     
-      <div className='flex flex-row p-5'>
+      <div className='flex flex-row p-5 bg-blue-100 '>
         <div>
             <img 
             src={products[0].img} 
@@ -17,10 +17,10 @@ export default function CartInfo() {
             className='w-28 h-28 object-contain border-2 border-solid border-slate-800'
             />
         </div>
-        <div className='pl-5'>
-        <div className='flex flex-row'>
-        <h3 className='text-3xl'>{products[0].title}</h3>
-        <i class="fa-solid fa-trash text-3xl"></i>
+        <div className='pl-8 bg-yellow-100 w-[50%]'>
+        <div className='flex flex-row bg-red-100 justify-between'>
+        <h3 className='text-2xl'>{products[0].title}</h3>
+        <i class="fa-solid fa-trash text-2xl "></i>
         </div>
 
         </div>
