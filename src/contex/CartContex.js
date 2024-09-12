@@ -7,7 +7,9 @@ export const CartContext = createContext({
         {},
         {},
     ],
-    //functions
+    handleAddToCart: () => {},
+    handleRemoveFromCart: () => {},
+    handleDecrement:() => {},
 })
 
 export const useCart = () => {
