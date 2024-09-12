@@ -1,10 +1,14 @@
 import React from 'react'
-import useHandleCart from './UseAddToCart'
+import { products } from '../../db/Products'
 export default function CartInfo() {
-    const {} = useHandleCart()
+
   return (
     <>
-    cartinfo
+    
+    <h2 className='text-4xl p-5 border-b-4 border-slate-800 '>SHOPPING CART</h2>
+      <div>
+        <h3>{products[0].title}</h3> 
+      </div>
     </>
   )
 }
