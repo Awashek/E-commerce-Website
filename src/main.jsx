@@ -8,7 +8,7 @@ import About from "./components/About"
 import Layout from './Layout.jsx'
 import Products from './components/Products/Products.jsx'
 import ProductDetails from './components/Products/ProductDetails.jsx'
-import CartInfo from './components/Products/CartInfo.jsx'
+import CartInfo from './components/Cart/CartInfo.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
