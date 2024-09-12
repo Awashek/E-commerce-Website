@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 import { products } from './db/Products'
 import { useState } from 'react'
 import Card from './components/Card'
-
+import useHandleCart from './components/Products/UseAddToCart'
 export default function Layout() {
 
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -46,7 +46,9 @@ export default function Layout() {
           newPrice === selected ||
           title === selected
       );
-    }
+    } 
+
+   
 
     return (
         <div className="flex flex-wrap justify-center p-4 bg-gray-100">

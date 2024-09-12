@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { useParams } from 'react-router-dom';
+import { useOutletContext, useParams } from 'react-router-dom';
 import { products } from '../../db/Products';
 import useHandleCart from './UseAddToCart'
 import { Link } from "react-router-dom";
@@ -20,6 +20,7 @@ export default function ProductDetail() {
   
   const [cartCount, setCartCount] = useState(0);
   const {handleAddToCart,handleDecrement,handleRemoveFromCart} = useHandleCart(cartCount, setCartCount)
+
 
   return (
 
