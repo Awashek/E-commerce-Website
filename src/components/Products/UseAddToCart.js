@@ -1,6 +1,6 @@
 
 const useHandleCart = (cartCount, setCartCount) => {
-    const productObject = {id, img,}
+    // const productObject = {id, img,}
     const handleAddToCart = () => {
         setCartCount(cartCount + 1);
     };
