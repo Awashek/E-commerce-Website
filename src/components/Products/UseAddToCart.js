@@ -1,5 +1,5 @@
-const useHandleCart = (cartCount, setCartCount) => {
 
+const useHandleCart = (cartCount, setCartCount) => {
     const handleAddToCart = () => {
         setCartCount(cartCount + 1);
     };

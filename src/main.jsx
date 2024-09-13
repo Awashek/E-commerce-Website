@@ -9,7 +9,7 @@ import Layout from './Layout.jsx'
 import Products from './components/Products/Products.jsx'
 import ProductDetails from './components/Products/ProductDetails.jsx'
 import CartInfo from './components/Cart/CartInfo.jsx'
-import {CartProvider} from './contex/CartContex.js'
+import CartContext from './contex/CartContex.js'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,8 +25,8 @@ const router = createBrowserRouter(
 )
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CartProvider>
+    <CartContext.Provider>
     <RouterProvider router={router} />
-    </CartProvider>
+    </CartContext.Provider>
   </StrictMode>,
 )
