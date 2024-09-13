@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useHandleCart from './Products/UseAddToCart';
+import CartContext from '../contex/CartContex';
 
 export default function Card({ id, img, title, star, reviews, prevPrice, newPrice}) {
 
   const [cartCount, setCartCount] = useState(0);
   const {handleAddToCart,handleDecrement,handleRemoveFromCart} = useHandleCart(cartCount, setCartCount)
 
+  const {cart, addToCart, removeFromCart} = useContext(CartContext)
   
   return (
     <div
