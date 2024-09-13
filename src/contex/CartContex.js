@@ -1,20 +1,5 @@
+import {createContext} from 'react'
 
-import { createContext, useContext } from "react";
+const CartContext = createContext();
 
-export const CartContext = createContext({
-    cart: [
-        {},
-        {},
-        {},
-    ],
-    handleAddToCart: () => {},
-    handleRemoveFromCart: () => {},
-    handleDecrement:() => {},
-})
-
-export const useCart = () => {
-    return useContext(CartContext)
-}
-
-export const CartProvider = CartContext.Provider;
-
+export default CartContext;
