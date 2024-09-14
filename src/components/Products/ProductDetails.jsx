@@ -21,6 +21,10 @@ export default function ProductDetail() {
   const [cartCount, setCartCount] = useState(0);
   const {handleAddToCart,handleDecrement,handleRemoveFromCart} = useHandleCart(cartCount, setCartCount)
 
+  // const productObject = { id, img, title, star, reviews, prevPrice, newPrice}
+  // const {cart, addToCart, removeFromCart} = useContext(CartContext)
+  
+
 
   return (
 

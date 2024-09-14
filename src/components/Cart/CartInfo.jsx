@@ -22,7 +22,6 @@ export default function CartInfo() {
         <h3 className='text-2xl'>{products[0].title}</h3>
         <i class="fa-solid fa-trash text-2xl "></i>
         </div>
-
         </div>
         
       </div>
