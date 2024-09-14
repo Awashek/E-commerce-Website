@@ -27,7 +27,6 @@ export default function ProductDetail() {
 
 
   return (
-
   <>
     <h2 className="text-3xl font-semibold text-center pl-5 pt-3">{product.title}</h2>
     <div className="flex justify-between gap-4 min-h-screen p-5">
