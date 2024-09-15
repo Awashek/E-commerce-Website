@@ -31,7 +31,6 @@ export default function ProductDetail() {
     <h2 className="text-3xl font-semibold text-center pl-5 pt-3">{product.title}</h2>
     <div className="flex justify-between gap-4 min-h-screen p-5">
     {/* Left content */}
-
     <div className="flex flex-col gap-4 w-1/2  ">
       
       <div className='flex flex-col '>
