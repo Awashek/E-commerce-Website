@@ -23,6 +23,7 @@ export default function ProductDetail() {
 
   // const productObject = { id, img, title, star, reviews, prevPrice, newPrice}
   // const {cart, addToCart, removeFromCart} = useContext(CartContext)
+
   
   return (
   <>
