@@ -1,5 +1,6 @@
 import React from 'react'
 import { products } from '../../db/Products'
+
 export default function CartInfo() {
 
   return (
