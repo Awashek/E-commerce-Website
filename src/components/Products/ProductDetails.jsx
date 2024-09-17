@@ -23,6 +23,7 @@ export default function ProductDetail() {
 
   // const productObject = { id, img, title, star, reviews, prevPrice, newPrice}
   // const {cart, addToCart, removeFromCart} = useContext(CartContext)
+  
   return (
   <>
     <h2 className="text-3xl font-semibold text-center pl-5 pt-3">{product.title}</h2>
