@@ -10,7 +10,9 @@ export default function About() {
     </div>
     <div className='w-[70%] bg-red-100'>
         <div className="flex flex-wrap justify-end p-4">
-            <h1>Main Content</h1> {/* Example content */}
+            <h1>Main Content</h1> 
+            <p>about us</p>
+            <p></p>
         </div>
     </div>
 </div>

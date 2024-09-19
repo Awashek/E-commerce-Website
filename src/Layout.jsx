@@ -9,7 +9,6 @@ import useHandleCart from './components/Products/UseAddToCart'
 export default function Layout() {
 
   const [selectedCategory, setSelectedCategory] = useState(null);
-
   const [search, setSearch] = useState("");
 
   const handleInputChange = (e) => {
@@ -36,7 +35,6 @@ export default function Layout() {
       filteredProducts = filteredItems;
     }
 
-
     if (selected) {
       filteredProducts = filteredProducts.filter(
         ({ category, color, company, newPrice, title }) =>
@@ -48,7 +46,6 @@ export default function Layout() {
       );
     } 
 
-   
 
     return (
         <div className="flex flex-wrap justify-center p-4 bg-gray-100">
