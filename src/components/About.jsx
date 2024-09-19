@@ -12,7 +12,7 @@ export default function About() {
         <div className="flex flex-wrap justify-end p-4">
             <h1>Main Content</h1> 
             <p>about us</p>
-            <p></p>
+            <p>para</p>
         </div>
     </div>
 </div>
