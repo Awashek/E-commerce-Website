@@ -2,6 +2,7 @@ import React from 'react'
 import Recommended from '../Recommended/Recommended'
 import Sidebar from '../Sidebar/Sidebar'
 import { useOutletContext } from 'react-router-dom'
+
 export default function Products() {
     const {result, handleChange, handleClick} = useOutletContext() 
   return (
