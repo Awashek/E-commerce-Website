@@ -4,7 +4,9 @@ import Sidebar from '../Sidebar/Sidebar'
 import { useOutletContext } from 'react-router-dom'
 
 export default function Products() {
+
     const {result, handleChange, handleClick} = useOutletContext() 
+    
   return (
   <>
     <div className='flex min-h-screen'>
