@@ -3,7 +3,7 @@ import React from 'react'
 export default function NavCart() {
     return (
     <div>
-        NavCart
+        <h1>Carts</h1>
     </div>
     )
 }
