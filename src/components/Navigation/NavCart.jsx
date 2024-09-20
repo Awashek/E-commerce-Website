@@ -4,7 +4,7 @@ export default function NavCart() {
     return (
     <div>
         <h1>Carts</h1>
-        <p></p>
+        <p>Items</p>
     </div>
     )
 }
