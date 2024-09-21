@@ -4,7 +4,6 @@ import useHandleCart from './Products/UseAddToCart';
 import CartContext from '../contex/CartContex';
 
 export default function Card({ id, img, title, star, reviews, prevPrice, newPrice}) {
-
   const [cartCount, setCartCount] = useState(0);
   const {handleAddToCart,handleDecrement,handleRemoveFromCart} = useHandleCart(cartCount, setCartCount)
 
