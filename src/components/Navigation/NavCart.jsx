@@ -6,6 +6,7 @@ export default function NavCart() {
         <h1 className='text-center font-3xl font-semibold'>Carts</h1>
         <p>Items</p>
         <p>hehe</p>
+        <p>Item 1</p>
     </div>
     )
 }
