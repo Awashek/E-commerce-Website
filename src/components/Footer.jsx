@@ -52,6 +52,7 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
+                    
                     <div>
                         <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
                         <ul className="text-gray-500 font-medium">
@@ -69,7 +70,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            
+
             <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between">
                 <span className="text-sm text-gray-500 sm:text-center">
