@@ -6,6 +6,7 @@ import { useOutletContext } from 'react-router-dom'
 export default function Products() {
 
     const {result, handleChange, handleClick} = useOutletContext() 
+
     
   return (
   <>
